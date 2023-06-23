@@ -8,10 +8,36 @@
   </head>
   <body>
 
+    <?php include 'header.php'?>
+    <?php include 'clientes.php'?>
 
 
+  <div class="container">
+    <div class="row d-flex" style="margin-top: 2vh; justify-content:space-around;">
+      <div class="col-5">
+            <div class="resultado" style="height: 30vh; width: 100%; border: 1px solid gray; margin-top: 2vh; border-radius: 10px;">
+                <div class="conteudo" style="margin: 10px;">
 
 
+                    Aqui colocaremos o resultado da ação selecionada 
+
+
+                </div>
+            </div>
+      </div>
+      <div class="col-5">
+            <div class="resultado" style="height: 30vh; width: 100%; border: 1px solid gray; margin-top: 2vh; border-radius: 10px;">
+                <div class="conteudo" style="margin: 10px;">
+
+
+                    Aqui colocaremos o resultado da ação selecionada 
+
+                    
+                </div>
+            </div>
+      </div>
+    </div>
+  </div>
 
 
 
