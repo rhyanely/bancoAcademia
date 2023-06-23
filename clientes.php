@@ -1,30 +1,29 @@
 
 <div class="container">
     
-<div class="row d-flex" style="margin-top: 8vh; justify-content:space-around;">
+<div class="row d-flex" style="margin-top: 3vh; justify-content:space-around;">
 
 <div class="col-5">
 <h1>Clientes</h1>
 
-    <form action="" method="GET">
-        
+    <form action="index.php" method="GET">
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label">Nome</label>
-          <input type="email" class="form-control" nome="nome" placeholder="Insira seu nome">
+          <input type="text" class="form-control" name="nome" placeholder="Insira seu nome">
         </div>
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label">Telefone</label>
-          <input type="email" class="form-control" nome="telefone" placeholder="Insira seu telefone">
+          <input type="texto" class="form-control" name="telefone" placeholder="Insira seu telefone">
         </div>
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label">Data de cadastro</label>
-          <input type="email" class="form-control" nome="cadastro" placeholder="Insira a data de cadastro">
+          <input type="date" class="form-control" name="cadastro" placeholder="Insira a data de cadastro">
         </div>
 
-        <button type="submit" class="btn btn-dark" value="inserir">Inserir</button>
-        <button type="submit" class="btn btn-dark" value="excluir">Excluir</button>
-        <button type="submit" class="btn btn-dark" value="atualizar">Atualizar</button>
-        <button type="submit" class="btn btn-dark" value="consultar">Consultar</button>
+        <button type="submit" class="btn btn-dark" name="acao" value="inserir">Inserir</button>
+        <button type="submit" class="btn btn-dark" name="acao" value="excluir">Excluir</button>
+        <button type="submit" class="btn btn-dark" name="acao" value="atualizar">Atualizar</button>
+        <button type="submit" class="btn btn-dark" name="acao" value="consultar">Consultar</button>
         
     
 
@@ -33,25 +32,25 @@
 <div class="col-5">
 <h1>Pagamento</h1>
 
-<form action="" method="GET">
+<form action="index.php" method="GET">
     
     <div class="mb-3">
       <label for="exampleFormControlInput1" class="form-label">Nome do cliente</label>
-      <input type="email" class="form-control" nome="nomeCliente" placeholder="Insira seu nome">
-    </div>
-    <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">Data de pagamento</label>
-      <input type="email" class="form-control" nome="dataPagamento" placeholder="Insira a data">
+      <input type="text" class="form-control" name="nomeCliente" placeholder="Insira seu nome">
     </div>
     <div class="mb-3">
       <label for="exampleFormControlInput1" class="form-label">Valor a pagar</label>
-      <input type="email" class="form-control" nome="valor" placeholder="Insira ao valor">
+      <input type="number" class="form-control" name="valor" placeholder="Insira ao valor">
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Data de pagamento</label>
+      <input type="date" class="form-control" name="dataPagamento" placeholder="Insira a data">
     </div>
 
-    <button type="submit" class="btn btn-dark" value="inserir">Inserir</button>
-    <button type="submit" class="btn btn-dark" value="excluir">Excluir</button>
-    <button type="submit" class="btn btn-dark" value="atualizar">Atualizar</button>
-    <button type="submit" class="btn btn-dark" value="consultar">Consultar</button>
+    <button type="submit" class="btn btn-dark" name="acao" value="inserir">Inserir</button>
+    <button type="submit" class="btn btn-dark" name="acao" value="excluir">Excluir</button>
+    <button type="submit" class="btn btn-dark" name="acao" value="atualizar">Atualizar</button>
+    <button type="submit" class="btn btn-dark" name="acao" value="consultar">Consultar</button>
     
 
 

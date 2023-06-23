@@ -18,8 +18,18 @@
             <div class="resultado" style="height: 30vh; width: 100%; border: 1px solid gray; margin-top: 2vh; border-radius: 10px;">
                 <div class="conteudo" style="margin: 10px;">
 
+               
+                <?php
+                  $nome = isset($_GET['nome']) ? $_GET['nome'] : null;
+                  $telefone = isset($_GET['telefone']) ? $_GET['telefone'] : null;
+                  $cadastro = isset($_GET['cadastro']) ? $_GET['cadastro'] : null;
+                  $acao = isset($_GET['acao']) ? $_GET['acao'] : null;
 
-                    Aqui colocaremos o resultado da ação selecionada 
+
+                  echo $nome . '<br>';
+                  echo $telefone . '<br>';
+                  echo $cadastro . '<br>';
+                ?>
 
 
                 </div>
@@ -30,7 +40,16 @@
                 <div class="conteudo" style="margin: 10px;">
 
 
-                    Aqui colocaremos o resultado da ação selecionada 
+                <?php
+                  $nomeCliente = isset($_GET['nomeCliente']) ? $_GET['nomeCliente'] : null;
+                  $dataPagamento = isset($_GET['dataPagamento']) ? $_GET['dataPagamento'] : null;
+                  $valor = isset($_GET['valor']) ? $_GET['valor'] : null;
+                  $acao = isset($_GET['acao']) ? $_GET['acao'] : null;
+
+                  echo $nomeCliente . '<br>';
+                  echo $dataPagamento . '<br>';
+                  echo $valor . '<br>';
+                ?>
 
                     
                 </div>
@@ -39,7 +58,28 @@
     </div>
   </div>
 
+  <?php
 
+      // Inclui o arquivo de conexão com o BD
+      include 'conexao.php';
+
+      // Declaração SQL a ser executada
+
+
+      //inserir dados
+      if($acao == "inserir"){
+
+        $sql = "INSERT INTO clientes VALUES (0,'$nome', '$telefone', '$cadastro')";
+  
+        // Executa a declaração SQL
+        if ($connection->query($sql) === true) {
+            echo "Dados inseridos com sucesso!";
+        } else {
+            echo "Erro ao inserir dados: " . $connection->error;
+        }
+      }
+
+?>
 
 
 
