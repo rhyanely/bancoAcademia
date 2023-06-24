@@ -6,7 +6,11 @@
 <div class="col-5">
 <h1>Clientes</h1>
 
-    <form action="index.php" method="GET">
+<form action="index.php" method="GET">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Código</label>
+          <input type="number" class="form-control" name="codigo" placeholder="Insira seu ID">
+        </div>
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label">Nome</label>
           <input type="text" class="form-control" name="nome" placeholder="Insira seu nome">
@@ -23,7 +27,7 @@
         <button type="submit" class="btn btn-dark" name="acao" value="inserir">Inserir</button>
         <button type="submit" class="btn btn-dark" name="acao" value="excluir">Excluir</button>
         <button type="submit" class="btn btn-dark" name="acao" value="atualizar">Atualizar</button>
-        <button type="submit" class="btn btn-dark" name="acao" value="consultar">Consultar</button>
+        <button type="submit" class="btn btn-dark" name="acao" value="consultar">Consultar registros</button>
         
     
 
@@ -33,7 +37,10 @@
 <h1>Pagamento</h1>
 
 <form action="index.php" method="GET">
-    
+    <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Código</label>
+          <input type="number" class="form-control" name="codigoP" placeholder="Insira o ID do pagamento">
+        </div>
     <div class="mb-3">
       <label for="exampleFormControlInput1" class="form-label">Nome do cliente</label>
       <input type="text" class="form-control" name="nomeCliente" placeholder="Insira seu nome">
@@ -47,10 +54,10 @@
       <input type="date" class="form-control" name="dataPagamento" placeholder="Insira a data">
     </div>
 
-    <button type="submit" class="btn btn-dark" name="acao" value="inserir">Inserir</button>
-    <button type="submit" class="btn btn-dark" name="acao" value="excluir">Excluir</button>
-    <button type="submit" class="btn btn-dark" name="acao" value="atualizar">Atualizar</button>
-    <button type="submit" class="btn btn-dark" name="acao" value="consultar">Consultar</button>
+    <button type="submit" class="btn btn-dark" name="acao2" value="inserirP">Inserir</button>
+    <button type="submit" class="btn btn-dark" name="acao2" value="excluirP">Excluir</button>
+    <button type="submit" class="btn btn-dark" name="acao2" value="atualizarP">Atualizar</button>
+    <button type="submit" class="btn btn-dark" name="acao2" value="consultarP">Consulta por nome</button>
     
 
 
